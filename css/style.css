@@ -1,0 +1,66 @@
+:root {
+  /* COLOR VARIABLES */
+  --primary_color: linear-gradient(
+    90deg,
+    #5151ff 0%,
+    #5151ff 0.01%,
+    #3535a6 100%
+  );
+  /* --secondary_color: ; */
+  /* --link_hover: ; */
+  --extra-light: 200;
+  --light: 300;
+  --regular: 400;
+  --medium: 500;
+  --semi-bold: 600;
+  --bold: 700;
+  --extra-bold: 800;
+}
+
+/* ::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fffcf5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000;
+  border-radius: 2px;
+} */
+
+@font-face {
+  font-family: SpaceGrotesk;
+  src: url("../fonts/SpaceGrotesk-Regular.ttf");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: SpaceGrotesk;
+  src: url("../fonts/SpaceGrotesk-Bold.ttf");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* DEFAULT STYLES */
+* {
+  box-sizing: border-box;
+  font-family: "SpaceGrotesk", sans-serif;
+  font-weight: var(--regular);
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  user-select: none;
+  color: white;
+}
+
+body {
+  max-width: 1560px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  background: var(--primary_color);
+}
