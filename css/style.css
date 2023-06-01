@@ -31,11 +31,11 @@
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #fffcf5;
+  background-color: #3535a6;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #3535a6;
+  background-color: #fff;
   border-radius: 2px;
 }
 
@@ -279,7 +279,7 @@ h4 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 9rem;
+  row-gap: 9rem;
 }
 
 .testimonials__container-block {
