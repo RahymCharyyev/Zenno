@@ -73,9 +73,18 @@
 body {
   max-width: 120rem;
   margin: 0 auto;
-  padding: 0 8%;
   overflow-x: hidden;
   background: var(--primary_color);
+}
+
+.header,
+.services,
+.help,
+.partner,
+.testimonials,
+.contacts,
+.footer__info {
+  padding: 0 8%;
 }
 
 /* COMMON STYLES */
@@ -193,6 +202,7 @@ h4 {
 }
 
 .zenno__container {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   gap: 5.5rem;
@@ -207,6 +217,40 @@ h4 {
   flex-direction: column;
   align-items: center;
   gap: 0.625rem;
+}
+
+.zenno__logo {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  overflow-x: hidden;
+}
+
+.horizontal-sliders {
+  display: flex;
+  flex-direction: row;
+  width: 500%;
+  overflow-x: hidden;
+}
+
+.slide {
+  line-height: 80vh;
+  font-size: var(--h1);
+  height: 80vh;
+  width: 100%;
+  margin-left: 160px;
+  background-image: linear-gradient(
+    89.99deg,
+    #ffffff 20.38%,
+    rgba(255, 255, 255, 0.12) 57.36%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* HELP */
