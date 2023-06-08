@@ -35,13 +35,10 @@
     <!-- Styles -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <title>Zenno</title>
 
 </head>
-
-<style>
-
-</style>
 
 <body>
     <!-- Header -->
@@ -98,8 +95,8 @@
                     almighty
                     or
                     omnipotent</div>
-                <div class="slide"><svg width="351" height="351" viewBox="0 0 351 351" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
+                <div class="slide">
+                    <svg width="351" height="351" viewBox="0 0 351 351" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M216.143 -0.000465773L350.207 -0.000488281V16.4155L132.696 350.506H8.29e-05L0 332.422L216.143 -0.000465773Z"
                             fill="url(#paint0_linear_3294_1158)" />
@@ -327,7 +324,6 @@
 <script>
     gsap.registerPlugin(ScrollTrigger);
     let sections = gsap.utils.toArray(".slide");
-
     gsap.to(sections, {
         xPercent: -100 * (sections.length - 1),
         ease: "none",
@@ -341,6 +337,7 @@
             end: "+=1000",
         }
     });
+
 
 </script>
 

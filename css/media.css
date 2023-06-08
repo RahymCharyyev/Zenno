@@ -1,0 +1,221 @@
+@media (max-width: 1695px) {
+  /* SERVICES */
+  .services__container-description img,
+  .services__container-description p {
+    width: 34rem;
+  }
+  /* Zenno */
+  .slide {
+    margin-left: 6.5rem;
+  }
+
+  /* HELP */
+  .help__container-block {
+    width: 28rem;
+  }
+  /* PARTNER */
+  .partner__title {
+    font-size: 60px;
+  }
+  /* TESTIMONIALS */
+  .testimonials__container {
+    gap: 3.75rem;
+  }
+  .testimonials__container-block {
+    gap: 2.5rem;
+  }
+  .testimonials__container-block-texts {
+    width: 20rem;
+  }
+  br {
+    display: none;
+  }
+  /* CONTACTS */
+  .contacts__container h3,
+  .contacts__container-info {
+    font-size: 36px;
+  }
+  .contacts__container h3 {
+    width: 33.5rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .services__title,
+  .help__title,
+  .testimonials__title,
+  .contacts__title {
+    font-size: 36px;
+  }
+  /* HEADER */
+  .header__nav-container-links {
+    font-size: 20px;
+  }
+  .header__title {
+    width: 55rem;
+    font-size: 58px;
+  }
+  /* SERVICES */
+  .services__container-titles {
+    font-size: 40px;
+  }
+  .services__container-description img {
+    width: 30.5rem;
+    height: 25.5rem;
+  }
+  .services__container-description p {
+    width: 30.5rem;
+    font-size: 20px;
+  }
+  /* Zenno */
+  .slide {
+    font-size: 58px;
+    margin-left: 6.25rem;
+  }
+  /* HELP */
+  .help__container-block {
+    width: 27.75rem;
+  }
+  .help__container-block h3 {
+    font-size: 40px;
+  }
+  .help__container-block p {
+    font-size: 20px;
+  }
+  /* PARTNER */
+  .partner__title {
+    font-size: 52px;
+  }
+  /* TESTIMONIALS */
+  .testimonials__container {
+    justify-content: space-between;
+  }
+  .testimonials__container-block {
+    align-items: flex-start;
+    width: 32.5rem;
+    gap: 1.5rem;
+  }
+  .testimonials__container-block picture {
+    height: 18.75rem;
+    width: 13rem;
+  }
+  .testimonials__container-block-texts {
+    width: 17.5rem;
+  }
+  .testimonials__container-block-texts p,
+  h4 {
+    font-size: 20px;
+  }
+  /* FOOTER */
+  .footer__info,
+  .footer__rights {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1325px) {
+  /* HEADER */
+  .header__title {
+    width: 41.5rem;
+    font-size: 48px;
+  }
+  /* SERVICES */
+  .services__container-description img {
+    width: 26.8rem;
+    height: 21.8rem;
+  }
+  .services__container-description p {
+    width: 26.8rem;
+  }
+  /* Zenno */
+  .slide {
+    font-size: 48px;
+    margin-left: 4.6rem;
+  }
+  /* HELP */
+  .help__container-block h3 {
+    font-size: 36px;
+  }
+  /* PARTNER */
+  .partner__title {
+    font-size: 45px;
+  }
+  /* TESTIMONIALS */
+  .testimonials__container {
+    gap: 3.4rem;
+  }
+  .testimonials__container-block {
+    width: 28rem;
+    gap: 1.25rem;
+  }
+  .testimonials__container-block picture {
+    height: 16.25rem;
+    width: 11.5rem;
+  }
+  .testimonials__container-block-texts {
+    width: 15.2rem;
+  }
+  .testimonials__container-block-texts p,
+  h4 {
+    font-size: 18px;
+  }
+  /* FOOTER */
+  .footer__info,
+  .footer__rights {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1230px) {
+  /* HEADER */
+  .header__title {
+    width: 41.5rem;
+    font-size: 48px;
+  }
+  /* SERVICES */
+  .services__container-description img {
+    width: 26.8rem;
+    height: 21.8rem;
+  }
+  .services__container-description p {
+    width: 26.8rem;
+  }
+  /* Zenno */
+  .slide {
+    font-size: 48px;
+    margin-left: 4.6rem;
+  }
+  /* HELP */
+  .help__container-block h3 {
+    font-size: 36px;
+  }
+  /* PARTNER */
+  .partner__title {
+    font-size: 45px;
+  }
+  /* TESTIMONIALS */
+  .testimonials__container {
+    gap: 3.5rem;
+  }
+  .testimonials__container-block {
+    width: 28rem;
+    gap: 1.25rem;
+  }
+  .testimonials__container-block picture {
+    height: 16.25rem;
+    width: 11.5rem;
+  }
+  .testimonials__container-block-texts {
+    width: 17.5rem;
+    gap: 1rem;
+  }
+  .testimonials__container-block-texts p,
+  h4 {
+    font-size: 18px;
+  }
+  /* FOOTER */
+  .footer__info,
+  .footer__rights {
+    font-size: 20px;
+  }
+}
