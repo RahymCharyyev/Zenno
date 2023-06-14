@@ -321,48 +321,10 @@
     </main>
 
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
-
-<script>
-    gsap.registerPlugin(ScrollTrigger);
-    let sections = gsap.utils.toArray(".zenno__slider-slide");
-
-    gsap.to(sections, {
-        xPercent: -100 * (sections.length - 1),
-        ease: "none",
-        scrollTrigger: {
-            trigger: ".zenno__slider-wrapper",
-            pin: ".zenno",
-            pinSpacing: true,
-            scrub: 4,
-            end: "+=1000",
-        }
-    });
-
-</script>
-<script>
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            const animated__logo = entry.target.querySelector('.animated__logo');
-            const path1 = entry.target.querySelector('.path1');
-            const path2 = entry.target.querySelector('.path2');
-
-            if (entry.isIntersecting) {
-                path1.classList.add('path1-animation');
-                path2.classList.add('path2-animation');
-                return; // if we added the class, exit the function
-            }
-
-            // We're not intersecting, so remove the class and restore opacity!
-            path1.classList.remove('path1-animation');
-            path2.classList.remove('path2-animation');
-        });
-    });
-
-    observer.observe(document.querySelector('.animated__logo'));
-</script>
-
+<script src="js/jquery.min.js"></script>
+<script src="js/gsap.min.js"></script>
+<script src="js/scrollTrigger.min.js"></script>
+<script src="js/gsap.js"></script>
+<script src="js/svg.js"></script>
 
 </html>
