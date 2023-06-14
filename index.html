@@ -89,21 +89,24 @@
             <div class="horizontal__line"></div>
         </section>
         <!-- Zenno -->
-        <div class="main">
-            <div class="horizontal-sliders">
-                <div class="slide">Our name “Zenno” comes from a Japanese word “zennou” which means:
+        <div class="zenno">
+            <div class="zenno__slider-wrapper">
+                <div class="zenno__slider-slide">Our name “Zenno” comes from a Japanese word “zennou” which means:
                     almighty
                     or
                     omnipotent</div>
-                <div class="slide">
-                    <svg width="351" height="351" viewBox="0 0 351 351" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="zenno__slider-slide">
+                    <svg width="351" height="351" viewBox="0 0 351 351" fill="none" class="animated__logo">
                         <path
                             d="M216.143 -0.000465773L350.207 -0.000488281V16.4155L132.696 350.506H8.29e-05L0 332.422L216.143 -0.000465773Z"
-                            fill="url(#paint0_linear_3294_1158)" />
-                        <path d="M350.195 349.283H205.188L350.195 124.932V349.283Z"
-                            fill="url(#paint1_linear_3294_1158)" />
+                            fill="url(#paint0_linear_3294_1158)">
+                        </path>
+                        <path d="M350.195 349.283H205.188L350.195 124.932V349.283Z" fill="url(#paint1_linear_3294_1158)"
+                            class="path1">
+                        </path>
                         <path d="M0.000320435 -0.000152588H145.008L0.000320435 224.351V-0.000152588Z"
-                            fill="url(#paint2_linear_3294_1158)" />
+                            fill="url(#paint2_linear_3294_1158)" class="path2">
+                        </path>
                         <defs>
                             <linearGradient id="paint0_linear_3294_1158" x1="282.402" y1="-15.6835" x2="33.082"
                                 y2="393.441" gradientUnits="userSpaceOnUse">
@@ -122,6 +125,7 @@
                             </linearGradient>
                         </defs>
                     </svg>
+
                 </div>
             </div>
             <div class="zenno__container-subtitle">
@@ -323,22 +327,42 @@
 
 <script>
     gsap.registerPlugin(ScrollTrigger);
-    let sections = gsap.utils.toArray(".slide");
+    let sections = gsap.utils.toArray(".zenno__slider-slide");
+
     gsap.to(sections, {
         xPercent: -100 * (sections.length - 1),
         ease: "none",
         scrollTrigger: {
-            trigger: ".horizontal-sliders",
-            pin: ".main",
+            trigger: ".zenno__slider-wrapper",
+            pin: ".zenno",
             pinSpacing: true,
-            scrub: 1,
-            markers: true,
-            // start: () => "center center",
+            scrub: 4,
             end: "+=1000",
         }
     });
 
-
 </script>
+<script>
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const animated__logo = entry.target.querySelector('.animated__logo');
+            const path1 = entry.target.querySelector('.path1');
+            const path2 = entry.target.querySelector('.path2');
+
+            if (entry.isIntersecting) {
+                path1.classList.add('path1-animation');
+                path2.classList.add('path2-animation');
+                return; // if we added the class, exit the function
+            }
+
+            // We're not intersecting, so remove the class and restore opacity!
+            path1.classList.remove('path1-animation');
+            path2.classList.remove('path2-animation');
+        });
+    });
+
+    observer.observe(document.querySelector('.animated__logo'));
+</script>
+
 
 </html>
