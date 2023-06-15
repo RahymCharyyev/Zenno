@@ -193,76 +193,54 @@ h4 {
 }
 
 .zenno__slider-wrapper {
+  width: 500%;
   display: flex;
   flex-direction: row;
-  width: 500%;
+  align-items: center;
   overflow-x: hidden;
 }
 
 .zenno__slider-slide {
-  position: relative;
   line-height: 80vh;
-  font-size: 64px;
-  height: 80vh;
   width: 100%;
   margin-left: 10rem;
   overflow: hidden;
 }
 
-.zenno__slider-slide::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    89.99deg,
-    #ffffff 20.38%,
-    rgba(255, 255, 255, 0.12) 57.36%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.zenno__slider-slide div {
+  font-size: 64px;
 }
 
-.path1 {
-  transform: translate(120px);
-  opacity: 0;
-}
+.path,
+.path1,
 .path2 {
-  transform: translate(-120px);
   opacity: 0;
 }
 
-.path1-animation {
-  animation: shape2 3s;
-  opacity: 1;
-  transform: translate(0px);
-}
-
+.path-animation,
+.path1-animation,
 .path2-animation {
-  animation: shape3 3s;
+  animation: showLogo 5s;
   opacity: 1;
-  transform: translate(0px);
 }
 
-@keyframes shape2 {
-  from {
-    transform: translate(120px);
+@keyframes showLogo {
+  0% {
+    opacity: 0;
   }
-  to {
-    transform: translate(0px);
-    opacity: 1;
+  20% {
+    opacity: 0.2;
   }
-}
-
-@keyframes shape3 {
-  from {
-    transform: translate(-120px);
+  40% {
+    opacity: 0.4;
   }
-  to {
-    transform: translate(0px);
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
     opacity: 1;
   }
 }
@@ -420,4 +398,46 @@ h4 {
 .footer__rights {
   text-align: center;
   font-size: 24px;
+}
+
+.test1 {
+  position: relative;
+  top: -125px;
+  left: 150px;
+}
+
+.test3 {
+  position: relative;
+  top: 0;
+  right: 150px;
+}
+
+.test1-animation {
+  animation: test1 3s;
+}
+
+.test3-animation {
+  animation: test3 3s;
+}
+
+@keyframes test1 {
+  from {
+    top: -150px;
+    left: 0;
+  }
+  to {
+    top: -125px;
+    left: 150px;
+  }
+}
+
+@keyframes test3 {
+  from {
+    top: 100px;
+    right: -50px;
+  }
+  to {
+    top: 0;
+    right: 150px;
+  }
 }
