@@ -172,6 +172,7 @@
     width: 41.5rem;
     font-size: 48px;
   }
+
   /* SERVICES */
   .services__container-description img {
     width: 26.8rem;
@@ -220,7 +221,168 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 1140px) {
+  .services__title,
+  .help__title,
+  .testimonials__title,
+  .contacts__title {
+    font-size: 24px;
+  }
+
+  .services__title img,
+  .help__title img,
+  .testimonials__title img,
+  .contacts__title img {
+    width: 10px;
+    height: 17px;
+  }
+  /* HEADER */
+
+  .header {
+    height: 35rem;
+  }
+
+  .header__title {
+    width: 31.5rem;
+    font-size: 36px;
+    line-height: 2.5rem;
+  }
+
+  #header__logo {
+    width: 125px;
+    height: 20px;
+  }
+
+  .header__nav-container-links {
+    display: none;
+  }
+
+  .header__nav-container-burger {
+    display: block;
+  }
+
+  /* SERVICES */
+  .services__container-titles {
+    font-size: 30px;
+  }
+
+  .services__container-description img {
+    width: 19rem;
+    height: 19rem;
+  }
+
+  .services__container-description p {
+    width: 20rem;
+  }
+
+  /* ZENNO */
+
+  .zenno__slider-slide div {
+    font-size: 36px;
+  }
+
+  /* HELP */
+
+  .help {
+    gap: 2.5rem;
+  }
+
+  #import {
+    width: 74px;
+    height: 76px;
+  }
+
+  #trade,
+  #market,
+  #business {
+    width: 70px;
+    height: 70px;
+  }
+
+  #product {
+    width: 78px;
+    height: 70px;
+  }
+
+  #finance {
+    width: 70px;
+    height: 38px;
+  }
+
+  .help__container-block img {
+    margin-bottom: 2.5rem;
+  }
+
+  .help__container-block h3 {
+    font-size: 28px;
+    margin-bottom: 1rem;
+  }
+
+  .help__container-block p {
+    font-size: 16px;
+  }
+
+  /* PARTNER */
+  .partner {
+    height: 31rem;
+  }
+  .partner__title {
+    font-size: 33px;
+  }
+  /* TESTIMONIALS */
+  .testimonials__container-block {
+    width: 25rem;
+    gap: 1.25rem;
+  }
+  .testimonials__container-block picture {
+    width: 8.5rem;
+    height: 11.5rem;
+  }
+  .testimonials__container-block-texts {
+    width: 17.5rem;
+    gap: 1rem;
+  }
+
+  .testimonials__container-block-texts p,
+  h4 {
+    font-size: 14px;
+    line-height: 1rem;
+  }
+  /* CONTACTS */
+
+  .contacts {
+    height: 30rem;
+    padding-top: 3.5rem;
+  }
+
+  .contacts__container h3 {
+    width: 22rem;
+    font-size: 24px;
+    line-height: 2rem;
+  }
+
+  .contacts__container-info {
+    gap: 5px;
+    font-size: 24px;
+  }
+  /* FOOTER */
+  .footer {
+    gap: 3rem;
+    padding: 3rem 0 3rem 0;
+  }
+
+  .footer__info,
+  .footer__rights {
+    font-size: 20px;
+  }
+
+  #footer__logo {
+    width: 125px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 500px) {
   .services__title,
   .help__title,
   .testimonials__title,
@@ -245,14 +407,6 @@
   #header__logo {
     width: 95px;
     height: 15px;
-  }
-
-  .header__nav-container-links {
-    display: none;
-  }
-
-  .header__nav-container-burger {
-    display: block;
   }
 
   .header__title {
@@ -319,12 +473,10 @@
 
   .help__container-block h3 {
     font-size: 32px;
-    margin-bottom: 1.25rem;
   }
 
   .help__container-block img {
     align-self: center;
-    margin-bottom: 2.5rem;
   }
 
   .help__container-block p {

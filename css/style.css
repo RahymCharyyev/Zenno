@@ -161,6 +161,10 @@ h4 {
   padding-top: 6.5rem;
 }
 
+.services__mobile {
+  display: none;
+}
+
 .services__container {
   display: flex;
   flex-direction: row;
