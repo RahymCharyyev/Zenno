@@ -64,6 +64,10 @@
   color: white;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   max-width: 120rem;
   margin: 0 auto;
@@ -135,6 +139,10 @@ h4 {
   flex-direction: row;
   gap: 2.5rem;
   font-size: 24px;
+}
+
+.header__nav-container-burger {
+  display: none;
 }
 
 .header__title {
@@ -210,41 +218,6 @@ h4 {
 .zenno__slider-slide div {
   font-size: 64px;
 }
-
-.path,
-.path1,
-.path2 {
-  opacity: 0;
-}
-
-.path-animation,
-.path1-animation,
-.path2-animation {
-  animation: showLogo 5s;
-  opacity: 1;
-}
-
-@keyframes showLogo {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 0.2;
-  }
-  40% {
-    opacity: 0.4;
-  }
-  60% {
-    opacity: 0.6;
-  }
-  80% {
-    opacity: 0.8;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .zenno__container-subtitle {
   display: flex;
   flex-direction: column;
@@ -398,46 +371,4 @@ h4 {
 .footer__rights {
   text-align: center;
   font-size: 24px;
-}
-
-.test1 {
-  position: relative;
-  top: -125px;
-  left: 150px;
-}
-
-.test3 {
-  position: relative;
-  top: 0;
-  right: 150px;
-}
-
-.test1-animation {
-  animation: test1 3s;
-}
-
-.test3-animation {
-  animation: test3 3s;
-}
-
-@keyframes test1 {
-  from {
-    top: -150px;
-    left: 0;
-  }
-  to {
-    top: -125px;
-    left: 150px;
-  }
-}
-
-@keyframes test3 {
-  from {
-    top: 100px;
-    right: -50px;
-  }
-  to {
-    top: 0;
-    right: 150px;
-  }
 }

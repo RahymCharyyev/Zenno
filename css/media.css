@@ -219,3 +219,227 @@
     font-size: 20px;
   }
 }
+
+@media (max-width: 400px) {
+  .services__title,
+  .help__title,
+  .testimonials__title,
+  .contacts__title {
+    font-size: 20px;
+  }
+
+  .services__title img,
+  .help__title img,
+  .testimonials__title img,
+  .contacts__title img {
+    width: 9px;
+    height: 14px;
+  }
+
+  /* HEADER */
+
+  .header {
+    height: 30rem;
+  }
+
+  #header__logo {
+    width: 95px;
+    height: 15px;
+  }
+
+  .header__nav-container-links {
+    display: none;
+  }
+
+  .header__nav-container-burger {
+    display: block;
+  }
+
+  .header__title {
+    width: 21.5rem;
+    font-size: 32px;
+    line-height: 2.5rem;
+  }
+
+  /* SERVICES */
+
+  .services__container {
+    display: none;
+  }
+
+  .services__mobile-title {
+    position: relative;
+    list-style: none;
+    font-size: 24px;
+    margin-bottom: 40px;
+    cursor: pointer;
+  }
+
+  .services__mobile-title:before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 3%;
+    content: url(../img/arrow__down.svg);
+  }
+
+  .services__mobile-card[open] .services__mobile-title:before {
+    content: url(../img/arrow__up.svg);
+  }
+
+  .services__mobile-info img {
+    width: 344px;
+    height: 235px;
+    margin-bottom: 20px;
+  }
+
+  .services__mobile-info p {
+    margin-bottom: 50px;
+  }
+
+  /* ZENNO */
+
+  .zenno__slider-slide div {
+    font-size: 32px;
+  }
+
+  .zenno__slider-slide {
+    line-height: 50vh;
+    width: 100%;
+    margin-left: 1.5rem;
+    overflow: hidden;
+  }
+
+  /* HELP */
+
+  .help {
+    padding-top: 0.5rem;
+    gap: 3.75rem;
+  }
+
+  .help__container-block h3 {
+    font-size: 32px;
+    margin-bottom: 1.25rem;
+  }
+
+  .help__container-block img {
+    align-self: center;
+    margin-bottom: 2.5rem;
+  }
+
+  .help__container-block p {
+    font-size: 16px;
+  }
+
+  #import {
+    width: 65px;
+    height: 73px;
+  }
+
+  #trade,
+  #market,
+  #business {
+    width: 53px;
+    height: 53px;
+  }
+
+  #product {
+    width: 59px;
+    height: 53px;
+  }
+
+  #finance {
+    width: 60px;
+    height: 32px;
+  }
+
+  /* PARTNER */
+
+  .partner {
+    height: 24rem;
+  }
+
+  .partner__title {
+    width: 265px;
+    font-size: 32px;
+    line-height: 2.4rem;
+    margin: 0 auto;
+  }
+
+  /* TESTIMONIALS */
+
+  .testimonials {
+    padding-top: 2.75rem;
+  }
+
+  .testimonials__container {
+    gap: 3.5rem;
+  }
+
+  .testimonials__container-block {
+    display: flex;
+    flex-direction: column;
+    width: 28rem;
+    gap: 1.25rem;
+  }
+
+  .testimonials__container-block picture {
+    align-self: center;
+    height: 235px;
+    width: 168px;
+  }
+
+  .testimonials__container-block-texts {
+    width: 344px;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .testimonials__container-block-texts p,
+  h4 {
+    font-size: 16px;
+  }
+
+  /* CONTACTS */
+
+  .contacts {
+    height: 27rem;
+    padding-top: 44px;
+  }
+
+  .contacts__container {
+    flex-direction: column;
+  }
+
+  .contacts__container h3 {
+    width: 344px;
+    font-size: 20px;
+    margin-bottom: 35px;
+  }
+
+  .contacts__container-info {
+    font-size: 20px;
+    gap: 1rem;
+    align-items: start;
+  }
+
+  /* FOOTER */
+  .footer {
+    gap: 3rem;
+    padding: 3rem 0 3rem 0;
+  }
+
+  .footer__info,
+  .footer__rights {
+    font-size: 16px;
+  }
+
+  #footer__logo {
+    width: 95px;
+    height: 15px;
+  }
+
+  .footer__info p {
+    text-align: right;
+  }
+}

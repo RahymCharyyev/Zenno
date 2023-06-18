@@ -23,4 +23,4 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 
-observer.observe(document.querySelector(".animated__logo"));
+observer.observe(document.querySelector(".huy"));
