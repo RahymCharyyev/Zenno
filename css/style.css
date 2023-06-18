@@ -205,23 +205,25 @@ h4 {
 }
 
 .zenno__slider-wrapper {
-  width: 500%;
+  width: 900%;
   display: flex;
   flex-direction: row;
   align-items: center;
+  white-space: nowrap;
   overflow-x: hidden;
 }
 
 .zenno__slider-slide {
   line-height: 80vh;
-  width: 100%;
+  width: 500%;
   margin-left: 10rem;
   overflow: hidden;
 }
 
-.zenno__slider-slide div {
+.zenno__slider-slide p {
   font-size: 64px;
 }
+
 .zenno__container-subtitle {
   display: flex;
   flex-direction: column;
