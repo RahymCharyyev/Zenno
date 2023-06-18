@@ -421,6 +421,10 @@
     display: none;
   }
 
+  .services__mobile {
+    display: block;
+  }
+
   .services__mobile-title {
     position: relative;
     list-style: none;
