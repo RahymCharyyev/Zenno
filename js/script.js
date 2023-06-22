@@ -13,3 +13,14 @@ function showDescription(descriptionNumber) {
     selectedDescription.style.display = "block";
   }
 }
+
+function getCurrentYear() {
+  let date = new Date();
+  return date.getFullYear();
+}
+function updateFooterText() {
+  let footer = document.getElementById("change__year");
+  let currentYear = getCurrentYear();
+  footer.innerHTML = "© Zenno LLC, " + currentYear;
+}
+window.onload = updateFooterText;

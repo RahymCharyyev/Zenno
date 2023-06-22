@@ -6,8 +6,6 @@
     #5151ff 0.01%,
     #3535a6 100%
   );
-  /* --secondary_color: ; */
-  /* --link_hover: ; */
   /* FONT-WEIGHT VARIABLES */
   --extra-light: 200;
   --light: 300;
@@ -139,6 +137,30 @@ h4 {
   flex-direction: row;
   gap: 2.5rem;
   font-size: 24px;
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 4px;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
 }
 
 .header__nav-container-burger {
