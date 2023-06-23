@@ -8,7 +8,7 @@ gsap.to(sections, {
     trigger: ".zenno__slider-wrapper",
     pin: ".zenno",
     pinSpacing: true,
-    scrub: 4,
+    scrub: 10,
     end: "+=1000",
   },
 });
