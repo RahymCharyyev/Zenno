@@ -14,27 +14,18 @@ function showDescription(descriptionNumber) {
   }
 }
 
-function underlineTitle(id) {
-  // Удаляем класс active-title у всех заголовков
-  var titles = document
-    .getElementsByClassName("services__container-titles")[0]
-    .getElementsByTagName("h3");
-  for (var i = 0; i < titles.length; i++) {
-    titles[i].classList.remove("active-title");
-  }
-
-  // Добавляем класс active-title к выбранному заголовку
-  var selectedTitle = document.getElementById("title" + id);
-  selectedTitle.classList.add("active-title");
-
-  // Вызываем функцию showDescription с тем же аргументом id
-  showDescription(id);
-}
-
 document.addEventListener("DOMContentLoaded", function () {
-  // Добавляем класс active-title к заголовку при инициализации страницы
-  var initialTitle = document.getElementById("title1");
-  initialTitle.classList.add("active-title");
+  let title1 = document.getElementById("title1");
+  title1.classList.add("selected");
+  let titles = document.querySelectorAll(".services__container-titles h3");
+  titles.forEach(function (title) {
+    title.addEventListener("click", function () {
+      titles.forEach(function (title) {
+        title.classList.remove("selected");
+      });
+      this.classList.add("selected");
+    });
+  });
 });
 
 function getCurrentYear() {

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 viewport-fit=cover">
-    <meta name="description" content="Futuris">
+    <meta name="description" content="Zenno">
     <meta name="robots" content="all" />
     <meta name="format-detection" content="phone=no" />
     <meta name="skype_toolbar" content="skype_toolbar_parser_compatible" />
@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/hamburger.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <title>Zenno</title>
 
@@ -52,7 +53,15 @@
                     <a href="#services">Services</a>
                     <a href="#contacts">Contacts</a>
                 </div>
-                <img class="header__nav-container-burger" src="./img/burger.svg" alt="burger menu">
+                <div id="menu" title="menu icon">
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#zenno" onclick="closeMenu()">About Us</a></li>
+                    <li><a href="#services" onclick="closeMenu()">Services</a></li>
+                    <li><a href="#contacts" onclick="closeMenu()">Contacts</a></li>
+                </ul>
             </div>
             <div class="horizontal__line"></div>
         </nav>
@@ -71,19 +80,19 @@
             </div>
             <div class="services__container">
                 <div class="services__container-titles">
-                    <h3 id="title1" class="wow animate__animated animate__fadeInUpBig" onclick="underlineTitle(1)">
+                    <h3 id="title1" class="wow animate__animated animate__fadeInUpBig" onclick="showDescription(1)">
                         Industrial
                         Supplies</h3>
-                    <h3 id="title2" class="wow animate__animated animate__fadeInUpBig" onclick="underlineTitle(2)">
+                    <h3 id="title2" class="wow animate__animated animate__fadeInUpBig" onclick="showDescription(2)">
                         Consumer Goods
                     </h3>
-                    <h3 id="title3" class="wow animate__animated animate__fadeInUpBig" onclick="underlineTitle(3)">
+                    <h3 id="title3" class="wow animate__animated animate__fadeInUpBig" onclick="showDescription(3)">
                         Freight Broker
                     </h3>
-                    <h3 id="title4" class="wow animate__animated animate__fadeInUpBig" onclick="underlineTitle(4)">
+                    <h3 id="title4" class="wow animate__animated animate__fadeInUpBig" onclick="showDescription(4)">
                         Wholesale and
                         Distribution</h3>
-                    <h3 id="title5" class="wow animate__animated animate__fadeInUpBig" onclick="underlineTitle(5)">
+                    <h3 id="title5" class="wow animate__animated animate__fadeInUpBig" onclick="showDescription(5)">
                         Cross-Border
                         Services</h3>
                 </div>
@@ -480,14 +489,12 @@
     </main>
 
 </body>
-<script>
-
-</script>
+<script src="js/script.js"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/gsap.min.js"></script>
 <script src="js/scrollTrigger.min.js"></script>
 <script src="js/gsap.js"></script>
-<script src="js/script.js"></script>
+<script src="js/hamburger.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/wowInit.js"></script>
 

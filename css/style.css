@@ -201,8 +201,43 @@ a:hover::before {
   cursor: pointer;
 }
 
-.services__container-titles h3:hover {
-  text-decoration: underline;
+.services__container-titles h3 {
+  position: relative;
+}
+
+.services__container-titles h3::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s ease;
+}
+
+#title1:hover::after,
+#title1.selected::after {
+  width: 70%;
+}
+
+#title2:hover::after,
+#title2.selected::after {
+  width: 65%;
+}
+#title3:hover::after,
+#title3.selected::after {
+  width: 55%;
+}
+
+#title4:hover::after,
+#title4.selected::after {
+  width: 100%;
+}
+
+#title5:hover::after,
+#title5.selected::after {
+  width: 85%;
 }
 
 .services__container-description {

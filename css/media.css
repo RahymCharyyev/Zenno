@@ -296,6 +296,11 @@
     width: 21rem;
   }
 
+  #title4:hover::after,
+  #title4.selected::after {
+    width: 60%;
+  }
+
   /* ZENNO */
 
   .zenno__slider-slide p {
