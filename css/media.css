@@ -28,7 +28,7 @@
     width: 20rem;
   }
   br {
-    display: none;
+    display: block;
   }
   /* CONTACTS */
   .contacts__container h3,
@@ -236,6 +236,17 @@
     width: 10px;
     height: 17px;
   }
+
+  .header,
+  .services,
+  .help,
+  .partner,
+  .testimonials,
+  .contacts,
+  .footer__info {
+    padding: 0 50px;
+  }
+
   /* HEADER */
 
   .header {
@@ -262,17 +273,27 @@
   }
 
   /* SERVICES */
+
+  .services__title {
+    padding-top: 40px;
+  }
+
+  .vertical__line {
+    margin-right: 12px;
+  }
+
   .services__container-titles {
+    width: 350px;
     font-size: 30px;
   }
 
   .services__container-description img {
-    width: 19rem;
-    height: 19rem;
+    width: 21rem;
+    height: 21rem;
   }
 
   .services__container-description p {
-    width: 20rem;
+    width: 21rem;
   }
 
   /* ZENNO */
@@ -281,10 +302,22 @@
     font-size: 36px;
   }
 
+  .zenno__slider-wrapper {
+    width: 800%;
+  }
+
   /* HELP */
 
   .help {
     gap: 2.5rem;
+  }
+
+  .help__container-block {
+    width: 20rem;
+  }
+
+  .help__container-block p {
+    width: 20rem;
   }
 
   #import {
@@ -306,7 +339,7 @@
 
   #finance {
     width: 70px;
-    height: 38px;
+    height: 70px;
   }
 
   .help__container-block img {
@@ -330,11 +363,14 @@
     font-size: 33px;
   }
   /* TESTIMONIALS */
+  .testimonials__title {
+    padding-top: 40px;
+  }
   .testimonials__container-block {
-    width: 25rem;
+    width: 21rem;
     gap: 1.25rem;
   }
-  .testimonials__container-block picture {
+  .testimonials__container-block img {
     width: 8.5rem;
     height: 11.5rem;
   }
@@ -382,7 +418,7 @@
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 830px) {
   /* HEADER */
   .header {
     height: 30rem;
@@ -416,6 +452,10 @@
     margin-bottom: 40px;
     cursor: pointer;
     text-align: center;
+  }
+
+  .services__mobile-title::-webkit-details-marker {
+    display: none;
   }
 
   .services__mobile-title:before {
@@ -478,7 +518,7 @@
   }
 
   .help__container-block {
-    width: 18.75rem;
+    /* width: 18.75rem; */
   }
 
   .help__container-block h3 {
@@ -493,6 +533,7 @@
   .help__container-block p {
     font-size: 16px;
     margin: 0 auto;
+    width: 18.75rem;
     text-align: center;
   }
 
@@ -722,6 +763,16 @@
     height: 14px;
   }
 
+  .header,
+  .services,
+  .help,
+  .partner,
+  .testimonials,
+  .contacts,
+  .footer__info {
+    padding: 0 25px;
+  }
+
   /* HEADER */
 
   .header {
@@ -740,6 +791,9 @@
   }
 
   /* SERVICES */
+  .services__mobile-title {
+    font-size: 24px;
+  }
   .services__mobile-title:before {
     right: 1%;
   }
@@ -757,11 +811,28 @@
 
   /* ZENNO */
 
+  .zenno__slider-wrapper {
+    width: 1000%;
+  }
+
   .zenno__slider-slide p {
     font-size: 32px;
   }
 
+  .zenno__big-logo img {
+    width: 164px;
+    height: 164px;
+  }
+
   /* HELP */
+  .help {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+  }
+  .help__title {
+    padding-bottom: 40px;
+  }
   .help__container-block {
     width: 21.5rem;
   }
@@ -808,7 +879,16 @@
 
   /* TESTIMONIALS */
   .testimonials__container-block {
-    width: 21.5rem;
+    width: 100%;
+  }
+
+  .testimonials__container-block img {
+    width: 168px;
+    height: 235px;
+  }
+
+  .testimonials__container-block-texts {
+    width: 100%;
   }
 
   /* CONTACTS */
@@ -819,9 +899,10 @@
   }
 
   .contacts__container h3 {
-    width: 22.5rem;
+    width: 19rem;
     font-size: 20px;
     margin-bottom: 2rem;
+    line-height: 114%;
   }
 
   .contacts__container-info {
@@ -837,5 +918,103 @@
   #footer__logo {
     width: 95px;
     height: 15px;
+  }
+}
+
+@media (max-width: 850px) and (orientation: landscape) {
+  .services__title,
+  .help__title,
+  .testimonials__title,
+  .contacts__title {
+    font-size: 22px;
+  }
+
+  .services__title img,
+  .help__title img,
+  .testimonials__title img,
+  .contacts__title img {
+    width: 9px;
+    height: 15px;
+  }
+
+  /* HEADER */
+  #header__logo {
+    width: 102px;
+    height: 170px;
+  }
+
+  .header__title {
+    width: 25rem;
+    font-size: 32px;
+  }
+
+  /* SERVICES */
+  .services__mobile-title {
+    font-size: 28px;
+    text-align: left;
+  }
+
+  .services__mobile-title:before {
+    right: 20%;
+  }
+
+  .services__mobile-info {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .services__mobile-info picture {
+    width: 26.25rem;
+    height: 18.6rem;
+    margin-bottom: 2rem;
+  }
+
+  .services__mobile-info p {
+    width: 26.25rem;
+    text-align: left;
+  }
+
+  /* ZENNO */
+  .zenno__big-logo img {
+    width: 164px;
+    height: 164px;
+  }
+
+  /* HELP */
+
+  .help {
+    gap: 5rem;
+  }
+
+  .help__container-block h3 {
+    font-size: 28px;
+  }
+
+  /* CONTACTS */
+
+  .contacts {
+    height: 27rem;
+    padding-top: 44px;
+  }
+
+  .contacts__container h3 {
+    width: 324px;
+    font-size: 22px;
+    margin-bottom: 60px;
+  }
+
+  .contacts__container-info {
+    font-size: 22px;
+  }
+
+  /* FOOTER */
+  .footer__info,
+  .footer__rights {
+    font-size: 18px;
+  }
+
+  #footer__logo {
+    width: 102px;
+    height: 17px;
   }
 }

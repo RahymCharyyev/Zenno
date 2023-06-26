@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 viewport-fit=cover">
     <meta name="description" content="Futuris">
     <meta name="robots" content="all" />
     <meta name="format-detection" content="phone=no" />
@@ -48,7 +48,7 @@
             <div class="header__nav-container">
                 <img src="./img/zenno_logo.svg" alt="Logo of Zenno" width="156" height="25" id="header__logo">
                 <div class="header__nav-container-links">
-                    <a href="#">About Us</a>
+                    <a href="#zenno">About Us</a>
                     <a href="#services">Services</a>
                     <a href="#contacts">Contacts</a>
                 </div>
@@ -71,15 +71,20 @@
             </div>
             <div class="services__container">
                 <div class="services__container-titles">
-                    <h3 class="wow animate__animated animate__fadeInUpBig" onclick="showDescription(1)">Industrial
+                    <h3 id="title1" class="wow animate__animated animate__fadeInUpBig" onclick="underlineTitle(1)">
+                        Industrial
                         Supplies</h3>
-                    <h3 class="wow animate__animated animate__fadeInUpBig" onclick="showDescription(2)">Consumer Goods
+                    <h3 id="title2" class="wow animate__animated animate__fadeInUpBig" onclick="underlineTitle(2)">
+                        Consumer Goods
                     </h3>
-                    <h3 class="wow animate__animated animate__fadeInUpBig" onclick="showDescription(3)">Freight Broker
+                    <h3 id="title3" class="wow animate__animated animate__fadeInUpBig" onclick="underlineTitle(3)">
+                        Freight Broker
                     </h3>
-                    <h3 class="wow animate__animated animate__fadeInUpBig" onclick="showDescription(4)">Wholesale and
+                    <h3 id="title4" class="wow animate__animated animate__fadeInUpBig" onclick="underlineTitle(4)">
+                        Wholesale and
                         Distribution</h3>
-                    <h3 class="wow animate__animated animate__fadeInUpBig" onclick="showDescription(5)">Cross-Border
+                    <h3 id="title5" class="wow animate__animated animate__fadeInUpBig" onclick="underlineTitle(5)">
+                        Cross-Border
                         Services</h3>
                 </div>
                 <div class="vertical__line"></div>
@@ -247,10 +252,11 @@
             <div class="horizontal__line"></div>
         </section>
         <!-- Zenno -->
-        <section class="zenno">
+        <section class="zenno" id="zenno">
             <div class="zenno__slider-wrapper">
                 <div class="zenno__slider-slide">
-                    <p>Our name “Zenno” comes from a Japanese word “zennou” which means:
+                    <p>Our name <strong> “Zenno” </strong> comes from a Japanese word <strong> “zennou” </strong> which
+                        means:
                         almighty
                         or
                         omnipotent</p>
@@ -278,7 +284,7 @@
             <div class="help__container">
                 <div class="help__container-block wow animate__animated
                     animate__fadeInLeft">
-                    <img src="img/import.svg" alt="Import and Export logo" width="90" height="110" id="import">
+                    <img src="img/import.svg" alt="Import and Export logo" width="100" height="100" id="import">
                     <h3>Import and Export:</h3>
                     <p>A trading company often engages in the import and export of goods and services. They source
                         products from different

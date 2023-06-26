@@ -2,13 +2,13 @@ gsap.registerPlugin(ScrollTrigger);
 let sections = gsap.utils.toArray(".zenno__slider-slide");
 
 gsap.to(sections, {
-  xPercent: -100 * (sections.length - 1),
+  xPercent: -200 * (sections.length - 1),
   ease: "none",
   scrollTrigger: {
     trigger: ".zenno__slider-wrapper",
     pin: ".zenno",
     pinSpacing: true,
-    scrub: 10,
+    scrub: 20,
     end: "+=1000",
   },
 });
