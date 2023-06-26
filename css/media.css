@@ -517,10 +517,6 @@
     justify-content: center;
   }
 
-  .help__container-block {
-    /* width: 18.75rem; */
-  }
-
   .help__container-block h3 {
     font-size: 28px;
     text-align: center;
