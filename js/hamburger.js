@@ -1,5 +1,6 @@
 let navLinks;
 let burgerIcon = document.querySelector("#menu");
+let titles = document.querySelector(".services__mobile-title");
 
 document.addEventListener("DOMContentLoaded", function () {
   navLinks = document.querySelector(".nav-links");
@@ -7,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function toggleMenu() {
     navLinks.classList.toggle("show");
     burgerIcon.classList.toggle("open");
+    titles.classList.toggle("hide");
   }
 
   burgerIcon.addEventListener("click", toggleMenu);
@@ -26,4 +28,5 @@ document.addEventListener("DOMContentLoaded", function () {
 function closeMenu() {
   navLinks.classList.remove("show");
   burgerIcon.classList.remove("open");
+  titles.classList.remove("hide");
 }
