@@ -1,13 +1,8 @@
-<div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="Zenno" />
+<h1 align="center">Zenno</h1>
 
 &#xa0;
 
-<a href="https://zenno-us.com/">Production</a>
-
-</div>
-
-<h1 align="center">Zenno</h1>
+<a href="https://zenno-us.com/">PRODUCTION</a>
 
 <p align="center">
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/RahymCharyyev/zenno?color=56BEB8">
@@ -51,13 +46,13 @@ This is the project of an official website of the dynamic general trading compan
 The following tools were used in this project:
 
 - [HTML](https://developer.mozilla.org/ru/docs/Web/HTML)
-- [CSS] (https://developer.mozilla.org/ru/docs/Web/CSS/Reference)
+- [CSS](https://developer.mozilla.org/ru/docs/Web/CSS/Reference)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [JQuery](https://api.jquery.com/)
 - [GSAP](https://greensock.com/docs/)
 - [Wow.js](https://wowjs.uk/docs)
 - [Animate on Scroll](https://michalsnik.github.io/aos/)
-- [animate.css](https://animate.style/)
+- [Animate.css](https://animate.style/)
 
 ## :memo: Screenshots
 
