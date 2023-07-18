@@ -71,7 +71,7 @@
   }
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1140px) {
   #menu {
     display: flex;
     z-index: 6;
