@@ -35,7 +35,7 @@
 
 @font-face {
   font-family: SpaceGrotesk;
-  src: url("../fonts/SpaceGrotesk-Regular.ttf");
+  src: url('../fonts/SpaceGrotesk-Regular.ttf');
   font-display: swap;
   font-weight: 400;
   font-style: normal;
@@ -43,7 +43,7 @@
 
 @font-face {
   font-family: SpaceGrotesk;
-  src: url("../fonts/SpaceGrotesk-Bold.ttf");
+  src: url('../fonts/SpaceGrotesk-Bold.ttf');
   font-display: swap;
   font-weight: 700;
   font-style: normal;
@@ -53,7 +53,7 @@
 
 * {
   box-sizing: border-box;
-  font-family: "SpaceGrotesk", sans-serif;
+  font-family: 'SpaceGrotesk', sans-serif;
   font-weight: var(--regular);
   scroll-behavior: smooth;
   padding: 0;
@@ -139,13 +139,14 @@ h4 {
   font-size: 24px;
 }
 
-a {
+#link {
   position: relative;
   text-decoration: none;
+  list-style-type: none;
 }
 
-a::before {
-  content: "";
+#link::before {
+  content: '';
   position: absolute;
   width: 100%;
   height: 2px;
@@ -158,7 +159,7 @@ a::before {
   transition: transform 0.3s ease-in-out;
 }
 
-a:hover::before {
+#link:hover::before {
   transform-origin: left;
   transform: scaleX(1);
 }
@@ -206,7 +207,7 @@ a:hover::before {
 }
 
 .services__container-titles h3::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -4px;
   left: 0;
@@ -223,11 +224,11 @@ a:hover::before {
 
 #title2:hover::after,
 #title2.selected::after {
-  width: 65%;
+  width: 80%;
 }
 #title3:hover::after,
 #title3.selected::after {
-  width: 55%;
+  width: 54%;
 }
 
 #title4:hover::after,
@@ -257,6 +258,29 @@ a:hover::before {
   width: 41rem;
   font-size: 24px;
   line-height: 1.8rem;
+}
+
+.services__container-description ul {
+  margin-left: 30px;
+  width: 40rem;
+  font-size: 24px;
+  line-height: 1.8rem;
+}
+
+.services__container-description a {
+  align-self: flex-end;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.services__container-description-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+#modal {
+  margin-top: 20px;
+  text-align: right;
 }
 
 /* Zenno */

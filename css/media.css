@@ -1,9 +1,11 @@
 @media (max-width: 1695px) {
   /* SERVICES */
   .services__container-description img,
-  .services__container-description p {
+  .services__container-description p,
+  .services__container-description ul {
     width: 34rem;
   }
+
   /* Zenno */
   .slide {
     margin-left: 6.5rem;
@@ -63,7 +65,8 @@
     width: 30.5rem;
     height: 25.5rem;
   }
-  .services__container-description p {
+  .services__container-description p,
+  .services__container-description ul {
     width: 30.5rem;
     font-size: 20px;
   }
@@ -124,7 +127,8 @@
     width: 26.8rem;
     height: 21.8rem;
   }
-  .services__container-description p {
+  .services__container-description p,
+  .services__container-description ul {
     width: 26.8rem;
   }
   /* Zenno */
@@ -178,7 +182,8 @@
     width: 26.8rem;
     height: 21.8rem;
   }
-  .services__container-description p {
+  .services__container-description p,
+  .services__container-description ul {
     width: 26.8rem;
   }
   /* Zenno */
@@ -292,7 +297,8 @@
     height: 21rem;
   }
 
-  .services__container-description p {
+  .services__container-description p,
+  .services__container-description ul {
     width: 21rem;
   }
 
@@ -493,6 +499,15 @@
     width: 27.5rem;
     margin-bottom: 3rem;
     text-align: center;
+  }
+
+  .services__mobile-info ul {
+    width: 27.5rem;
+  }
+
+  .modal__link {
+    margin-top: 5px;
+    margin-bottom: 3rem;
   }
 
   /* ZENNO */
@@ -709,6 +724,10 @@
     text-align: left;
   }
 
+  .services__mobile-info ul {
+    width: 26.25rem;
+  }
+
   /* HELP */
 
   .help {
@@ -806,8 +825,11 @@
   }
 
   .services__mobile-info p {
-    width: 344px;
     margin-bottom: 50px;
+  }
+
+  .services__mobile-info ul {
+    width: 344px;
   }
 
   /* ZENNO */
@@ -971,6 +993,11 @@
   }
 
   .services__mobile-info p {
+    width: 26.25rem;
+    text-align: left;
+  }
+
+  .services__mobile-info ul {
     width: 26.25rem;
     text-align: left;
   }

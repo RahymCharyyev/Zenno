@@ -40,11 +40,59 @@
     <link rel="stylesheet" href="css/hamburger.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/aos.min.css">
+    <link rel="stylesheet" href="css/modal.css">
     <title>Zenno</title>
 
 </head>
 
 <body>
+    <!-- Modal -->
+    <div id="modal_bg" class="modal_bg fadeInRight">
+        <div id="modal_close">X</div>
+        <div class="modal_content">
+            <div class="modal__text">
+                <h1>Our Business Structure</h1>
+                <div>The success of any business is to a larger extent dependent on the business structure of the
+                    organization and the people
+                    who occupy the available roles. ZENNO LLC. will build a solid business structure that can
+                    support the growth of our
+                    truck dispatcher
+                    company.
+                </div>
+                <div>
+                    We will ensure that we hire competent hands to help us build the business of our dream. The fact
+                    that we want to become
+                    one of the leading truck dispatchers in the whole of the United States of America makes it
+                    necessary for our
+                    organization to deliberately build a well – structured business from the onset. Will work hard
+                    to ensure that we only
+                    attract people with the right mindset to help us achieve our business goals and objectives in
+                    record time.
+                </div>
+                <h1>Our Competitive Advantage</h1>
+                <div>
+                    We are mindful of the fact that there are competitions in the telemarketing and call center
+                    industry and the General
+                    Freight Trucking industry in the United States of America, hence we have been able to hire some
+                    of the best business
+                    developers to
+                    handle our sales and marketing.
+                </div>
+                <div>ZENNO LLC. might be a new entrant into the General Freight Trucking industry, but we are coming
+                    into the industry with
+                    core professionals and of course a standard truck dispatch center with the latest equipment and
+                    software applications in
+                    the industry.</div>
+                <div> Our employees will be well taken care of, and their welfare package will be among the best
+                    within our category in the
+                    industry meaning that they will be more than willing to build the business with us and help
+                    deliver our set goals and
+                    achieve all our aims and
+                    objectives.
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Header -->
     <header class="header">
         <nav class="header__nav wow animate__animated
@@ -52,18 +100,18 @@
             <div class="header__nav-container">
                 <img src="./img/zenno_logo.svg" alt="Logo of Zenno" width="156" height="25" id="header__logo">
                 <div class="header__nav-container-links">
-                    <a href="#zenno">About Us</a>
-                    <a href="#services">Services</a>
-                    <a href="#contacts">Contacts</a>
+                    <a id="link" href="#zenno">About Us</a>
+                    <a id="link" href="#services">Services</a>
+                    <a id="link" href="#contacts">Contacts</a>
                 </div>
                 <div id="menu" title="menu icon">
                     <span class="line1"></span>
                     <span class="line2"></span>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="#zenno" onclick="closeMenu()">About Us</a></li>
-                    <li><a href="#services" onclick="closeMenu()">Services</a></li>
-                    <li><a href="#contacts" onclick="closeMenu()">Contacts</a></li>
+                    <li><a id="link" href="#zenno" onclick="closeMenu()">About Us</a></li>
+                    <li><a id="link" href="#services" onclick="closeMenu()">Services</a></li>
+                    <li><a id="link" href="#contacts" onclick="closeMenu()">Contacts</a></li>
                 </ul>
             </div>
             <div class="horizontal__line"></div>
@@ -87,7 +135,7 @@
                         Industrial
                         Supplies</h3>
                     <h3 id="title2" data-aos="fade-up" onclick="showDescription(2)">
-                        Consumer Goods
+                        Dispatching Services
                     </h3>
                     <h3 id="title3" data-aos="fade-up" onclick="showDescription(3)">
                         Freight Broker
@@ -117,13 +165,22 @@
                     animate__fadeInRight">
                     <picture>
                         <source type="image/webp" srcSet="img/services_img2.webp" />
-                        <img src="img/services_img2.jpg" alt="Consumer Goods image" width="655" height="450" />
+                        <img src="img/services_img2.jpg" alt="Dispatching services image" width="655" height="450" />
                     </picture>
-                    <p>At Zenno, we are dedicated to providing an extensive range of consumer goods that enrich people's
-                        lives and meet their
-                        everyday needs. We understand the importance of high-quality products that offer both
-                        functionality and style, ensuring
-                        a seamless experience for our customers.</p>
+                    <ul class="services__container-description-wrapper">
+                        <li>Ensuring that truck drivers have cargo to carry and stick to their appointed arrival
+                            times
+                            and destinations</li>
+                        <li>Helping truck drivers to concentrate on routes and roadways and to safely deliver their
+                            cargoes</li>
+                        <li>Coordinate shipping operations with drivers, suppliers, and receiving customers, work
+                            with
+                            company drivers</li>
+                        <li>Schedule truck arrivals for product pickup and delivery and track the progress of
+                            transit to
+                            ensure on-time deliveries</li>
+                        <a id="modal" href="#open">Read More ↗</a>
+                    </ul>
                 </div>
                 <div id="description3" class="services__container-description animate__animated
                     animate__fadeInRight">
@@ -145,9 +202,11 @@
                         <img src="img/services_img4.jpg" alt="Wholesale and Distribution image" width="655"
                             height="450" />
                     </picture>
-                    <p>As a wholesale and distribution company, we specialize in sourcing high-quality products directly
+                    <p>As a wholesale and distribution company, we specialize in sourcing high-quality products
+                        directly
                         from manufacturers or
-                        suppliers and efficiently delivering them to retailers or other businesses. We understand the
+                        suppliers and efficiently delivering them to retailers or other businesses. We understand
+                        the
                         importance of reliable and
                         timely deliveries to meet market demands and maintain customer satisfaction.</p>
                 </div>
@@ -187,18 +246,28 @@
                 </details>
                 <details class="services__mobile-card">
                     <summary class="services__mobile-title" data-aos="fade-down">
-                        <h3>Consumer Goods</h3>
+                        <h3>Dispatching Services</h3>
                     </summary>
                     <div class="services__mobile-info" data-aos="fade-right">
                         <picture>
                             <source type="image/webp" srcSet="img/services_img2.webp" />
-                            <img src="img/services_img2.jpg" alt="Industrial Supplies image" width="655" height="450" />
+                            <img src="img/services_img2.jpg" alt="Dispatching Services image" width="655"
+                                height="450" />
                         </picture>
-                        <p>At Zenno, we are dedicated to providing an extensive range of consumer goods that enrich
-                            people's lives and meet their
-                            everyday needs. We understand the importance of high-quality products that offer both
-                            functionality and style, ensuring
-                            a seamless experience for our customers.</p>
+                        <ul>
+                            <li>Ensuring that truck drivers have cargo to carry and stick to their appointed arrival
+                                times
+                                and destinations</li>
+                            <li>Helping truck drivers to concentrate on routes and roadways and to safely deliver their
+                                cargoes</li>
+                            <li>Coordinate shipping operations with drivers, suppliers, and receiving customers, work
+                                with
+                                company drivers</li>
+                            <li>Schedule truck arrivals for product pickup and delivery and track the progress of
+                                transit to
+                                ensure on-time deliveries</li>
+                        </ul>
+                        <a class="modal__link" id="modal__mobile" href="#open">Read More ↗</a>
                     </div>
                 </details>
                 <details class="services__mobile-card">
@@ -210,11 +279,14 @@
                             <source type="image/webp" srcSet="img/services_img3.webp" />
                             <img src="img/services_img3.jpg" alt="Industrial Supplies image" width="655" height="450" />
                         </picture>
-                        <p>In the complex world of logistics and transportation, freight brokers play a crucial role in
+                        <p>In the complex world of logistics and transportation, freight brokers play a crucial role
+                            in
                             connecting shippers and
-                            carriers, facilitating the smooth movement of goods from one point to another. At Zenno, we
+                            carriers, facilitating the smooth movement of goods from one point to another. At Zenno,
+                            we
                             pride ourselves on being a
-                            trusted freight broker, dedicated to simplifying the logistics process and optimizing cargo
+                            trusted freight broker, dedicated to simplifying the logistics process and optimizing
+                            cargo
                             transportation.</p>
                     </div>
                 </details>
@@ -229,7 +301,8 @@
                         </picture>
                         <p>As a wholesale and distribution company, we specialize in sourcing high-quality products
                             directly from manufacturers or
-                            suppliers and efficiently delivering them to retailers or other businesses. We understand
+                            suppliers and efficiently delivering them to retailers or other businesses. We
+                            understand
                             the importance of reliable and
                             timely deliveries to meet market demands and maintain customer satisfaction.</p>
                     </div>
@@ -243,7 +316,8 @@
                             <source type="image/webp" srcSet="img/services_img5.webp" />
                             <img src="img/services_img5.jpg" alt="Industrial Supplies image" width="655" height="450" />
                         </picture>
-                        <p>Navigating the complexities of international trade requires expertise, efficiency, and a deep
+                        <p>Navigating the complexities of international trade requires expertise, efficiency, and a
+                            deep
                             understanding of
                             cross-border operations. At Zenno, we specialize in providing comprehensive cross-border
                             services, ensuring smooth and
@@ -470,6 +544,7 @@
 <script defer src="js/aos.min.js"></script>
 <script defer src="js/aosInit.js"></script>
 <script defer src="js/script.js"></script>
+<script defer src="js/modal.js"></script>
 <script defer src="js/gsap.min.js"></script>
 <script defer src="js/scrollTrigger.min.js"></script>
 <script defer src="js/gsap.js"></script>
