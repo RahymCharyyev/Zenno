@@ -58,6 +58,13 @@
   font-weight: bold;
 }
 
+@media (min-width: 1920px) {
+  .modal_content {
+    margin: 150px auto;
+    max-width: 41%;
+  }
+}
+
 @media (max-width: 768px) {
   .modal_content {
     max-width: 70%;
