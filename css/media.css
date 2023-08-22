@@ -865,12 +865,12 @@
 
   .help__container-block h3 {
     font-size: 32px;
-    text-align: center;
+    text-align: start;
   }
 
   .help__container-block p {
-    text-align: justify;
-    align-self: center;
+    width: 21.5rem;
+    text-align: start;
     margin: 0;
   }
 

@@ -33,6 +33,7 @@
 
 .nav-links {
   display: none;
+  list-style-type: none;
 }
 
 /* Landscape orientation */
