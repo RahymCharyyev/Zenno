@@ -854,7 +854,6 @@
   /* HELP */
   .help {
     display: flex;
-    justify-content: flex-start;
     gap: 40px;
   }
   .help__title {
@@ -866,11 +865,12 @@
 
   .help__container-block h3 {
     font-size: 32px;
-    text-align: left;
+    text-align: center;
   }
 
   .help__container-block p {
-    text-align: left;
+    text-align: justify;
+    align-self: center;
     margin: 0;
   }
 
